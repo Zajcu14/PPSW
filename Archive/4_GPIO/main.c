@@ -1,14 +1,14 @@
 #include <LPC21xx.H>
 
-#define LED0_bm (1<16)
-#define LED1_bm (1<17)
-#define LED2_bm (1<18)
-#define LED3_bm (1<19)
+#define LED0_bm  0x10000
+#define LED1_bm  0x20000
+#define LED2_bm  0x40000
+#define LED3_bm  0x80000
 
-#define BUT0_bm (1<4) 
-#define BUT2_bm (1<5)
-#define BUT1_bm (1<6)
-#define BUT3_bm (1<7)
+#define BUT0_bm  0x10
+#define BUT2_bm  0x20 
+#define BUT1_bm  0x40
+#define BUT3_bm  0x80
 
 
 enum StepDirection {LEFT, RIGHT};
@@ -16,28 +16,28 @@ enum KeyBoardsState {RELASED, BUTTON_0, BUTTON_1, BUTTON_2, BUTTON_3};
 
 void LedInit(){
 
-	IO1DIR=IO1DIR|(LED0_bm|LED1_bm|LED2_bm|LED3_bm);
-	IO1CLR=(LED0_bm|LED1_bm|LED2_bm|LED3_bm);
-	IO1SET=LED0_bm;
+	  IO1DIR=IO1DIR|(LED0_bm|LED1_bm|LED2_bm|LED3_bm);
+	  IO1CLR=(LED0_bm|LED1_bm|LED2_bm|LED3_bm);
+	  IO1SET=LED0_bm;
 }
 
 void LedOn(unsigned char ucLedIndeks){
 
-	IO1CLR=(LED0_bm|LED1_bm|LED2_bm|LED3_bm);
-	switch(ucLedIndeks)
-	{
-		case 0:
-			IO1SET=LED0_bm;
-		  break;
-		case 1:
-			IO1SET=LED1_bm;
-		  break;
-	  case 2:
-			IO1SET=LED2_bm;
-		  break;
-		case 3:
-			IO1SET=LED3_bm;
-		  break;
+	  IO1CLR=(LED0_bm|LED1_bm|LED2_bm|LED3_bm);
+	
+	  switch(ucLedIndeks){
+		  case 0:
+			    IO1SET=LED0_bm;
+		      break;
+		  case 1:
+			    IO1SET=LED1_bm;
+		      break;
+	    case 2:
+			    IO1SET=LED2_bm;
+		      break;
+		  case 3:
+			    IO1SET=LED3_bm;
+		      break;
 	}
 }
 
@@ -48,7 +48,7 @@ void LedStep(enum StepDirection eDirection ){
       case LEFT:
           uiLedState = (uiLedState + 1)%4;
           break;
-      case RIGTH:
+      case RIGHT:
           uiLedState = (uiLedState - 1)%4;
           break;
     }
@@ -64,33 +64,33 @@ void LedStepRight(void){
 }
 
 enum KeyBoardsState eKeyboardRead(){
-	if((IO0PIN^BUT0_bm)==0){
-		 return BUTTON_0;
-	}else if((IO0PIN^BUT1_bm)==0){
-		 return BUTTON_1;
-	}else if((IO0PIN^BUT2_bm)==0){
-	     return BUTTON_2;
-	}else if((IO0PIN^BUT3_bm)==0){
-	     return BUTTON_3;
-	}else{
-	     return RELEASED;
-	}
+	  if((IO0PIN^BUT0_bm)==0){
+		    return BUTTON_0;
+	  }else if((IO0PIN^BUT1_bm)==0){
+		    return BUTTON_1;
+	  }else if((IO0PIN^BUT2_bm)==0){
+	      return BUTTON_2;
+	  }else if((IO0PIN^BUT3_bm)==0){
+	      return BUTTON_3;
+	  }else{
+	      return RELASED;
+	  }
 }
 
 void KeyboardInit(){
-	IO0DIR=IO0PIN|(BUT0_bm|BUT1_bm|BUT2_bm|BUT3_bm);
+	  IO0DIR=IO0PIN|(BUT0_bm|BUT1_bm|BUT2_bm|BUT3_bm);
 }
 
 void Delay(int iMiliSeconds){
-	int i;
+	  int i;
 
-	for(i=0;i<1063*iMiliSeconds;i++){}
+	  for(i=0;i<1063*iMiliSeconds;i++){}
 }
 
 // 1 sekunda -> 1594000
 
 int main(){
-	
+	IO1DIR=0x800000;
 	LedInit();
 
 	while(1){
@@ -123,8 +123,8 @@ int main(){
 		IO1SET=IO1SET|LED3_bm;
 		*/
 
-		/*Cwiczenie 12
-		LedOn(0);
+		//Cwiczenie 12
+		/*LedInit(0);
 		Delay(250);
 
 		LedOn(1);
@@ -135,7 +135,7 @@ int main(){
 
 		LedOn(3);
 		Delay(250);*/
-
+    
 
     /*Cwiczenie 19
 		switch(eKeyboardRead()){
@@ -158,14 +158,17 @@ int main(){
 		Delay(250);*/
 
 
-		/*Cwiczenie 22
+		//Cwiczenie 22
+		
 		char cStepCounter;
 		for(cStepCounter=0;cStepCounter<9;cStepCounter++){
             LedStep(RIGHT);
+						Delay(2000);
 		}
 		for(cStepCounter=0;cStepCounter<9;cStepCounter++){
             LedStep(LEFT);
-		}*/
+						Delay(2000);
+		}
 		
 		/*Cwiczenie 24
 		switch(eKeyboardRead()){
