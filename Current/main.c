@@ -17,6 +17,7 @@ enum KeyBoardsState {RELASED, BUTTON_0, BUTTON_1, BUTTON_2, BUTTON_3};
 void LedInit(){
 
 	IO1DIR=IO1DIR|(LED0_bm|LED1_bm|LED2_bm|LED3_bm);
+	IO1CLR=(LED0_bm|LED1_bm|LED2_bm|LED3_bm);
 	IO1SET=LED0_bm;
 }
 
@@ -55,15 +56,11 @@ void LedStep(enum StepDirection eDirection ){
 }
 
 void LedStepLeft(void){
-    if(eKeyboardRead() == BUTTON_2){
-        LedStep(LEFT);
-    }
+     LedStep(LEFT);
 }
 
 void LedStepRight(void){
-    if(eKeyboardRead() == BUTTON_1){
-        LedStep(RIGHT);
-    }
+     LedStep(RIGHT);
 }
 
 enum KeyBoardsState eKeyboardRead(){
@@ -168,6 +165,18 @@ int main(){
 		}
 		for(cStepCounter=0;cStepCounter<9;cStepCounter++){
             LedStep(LEFT);
+		}*/
+		
+		/*Cwiczenie 24
+		switch(eKeyboardRead()){
+         case BUTTON_1:
+               LedStep(RIGHT);
+			         break;
+         case BUTTON_2:
+               LedStep(LEFT);
+				       break;
+				 case RELEASED:
+				       breal;
 		}*/
 
 	}
