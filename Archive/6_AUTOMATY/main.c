@@ -24,9 +24,12 @@ enum MovingDirectionState MotionDirection = STOP_MOVE;
 int iStepCounter=0;
 
 int main(){
-	
+	InitTimer0();
   LedInit();
-	
+	WaitOnTimer0(1000);
+	iStepCounter++;
+	WaitOnTimer0(1000);
+	iStepCounter++;
 	while(1){
 		//Cwiczenie 1
 		/*switch(eLedState){
