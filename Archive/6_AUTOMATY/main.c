@@ -24,11 +24,11 @@ enum MovingDirectionState MotionDirection = STOP_MOVE;
 int iStepCounter=0;
 
 int main(){
-	InitTimer0();
-  LedInit();
-	WaitOnTimer0(1000);
+  InitTimer0Match0(1000000);
+	WaitOnTimer0Match0();
 	iStepCounter++;
-	WaitOnTimer0(1000);
+	InitTimer0Match0(5000000);
+	WaitOnTimer0Match0();
 	iStepCounter++;
 	while(1){
 		//Cwiczenie 1
