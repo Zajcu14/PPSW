@@ -1,17 +1,0 @@
-Dependencies for Project 'TIMER', Target 'Target 1': (DO NOT MODIFY !)
-F (.\Startup.s)(0x51C80D6E)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keilv5_1\ARM\RV31\INC-I C:\Keilv5_1\ARM\CMSIS\Include-I C:\Keilv5_1\ARM\Inc\Philips--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
-F (..\Archive\6_AUTOMATY\keyboard.c)(0x627215A4)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keilv5_1\ARM\RV31\INC-I C:\Keilv5_1\ARM\CMSIS\Include-I C:\Keilv5_1\ARM\Inc\Philips-o .\keyboard.o --omf_browse .\keyboard.crf --depend .\keyboard.d)
-I (C:\Keilv5_1\ARM\Inc\Philips\LPC21xx.H)(0x51C80D9C)
-I (C:\Users\jakub\Desktop\PPSW2\Archive\6_AUTOMATY\keyboard.h)(0x62721530)
-F (..\Archive\6_AUTOMATY\led.c)(0x62721B00)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keilv5_1\ARM\RV31\INC-I C:\Keilv5_1\ARM\CMSIS\Include-I C:\Keilv5_1\ARM\Inc\Philips-o .\led.o --omf_browse .\led.crf --depend .\led.d)
-I (C:\Keilv5_1\ARM\Inc\Philips\LPC21xx.H)(0x51C80D9C)
-I (C:\Users\jakub\Desktop\PPSW2\Archive\6_AUTOMATY\led.h)(0x62721A87)
-F (..\Archive\6_AUTOMATY\main.c)(0x6278B0FC)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keilv5_1\ARM\RV31\INC-I C:\Keilv5_1\ARM\CMSIS\Include-I C:\Keilv5_1\ARM\Inc\Philips-o .\main.o --omf_browse .\main.crf --depend .\main.d)
-I (C:\Users\jakub\Desktop\PPSW2\Archive\6_AUTOMATY\led.h)(0x62721A87)
-I (C:\Users\jakub\Desktop\PPSW2\Archive\6_AUTOMATY\keyboard.h)(0x62721530)
-F (..\Archive\6_AUTOMATY\keyboard.h)(0x62721530)()
-F (..\Archive\6_AUTOMATY\led.h)(0x62721A87)()
-F (.\timer.h)(0x6278AC4B)()
-F (.\timer.c)(0x6278B383)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keilv5_1\ARM\RV31\INC-I C:\Keilv5_1\ARM\CMSIS\Include-I C:\Keilv5_1\ARM\Inc\Philips-o .\timer.o --omf_browse .\timer.crf --depend .\timer.d)
-I (C:\Keilv5_1\ARM\Inc\Philips\LPC21xx.H)(0x51C80D9C)
-I (C:\Users\jakub\Desktop\PPSW2\Current\timer.h)(0x6278AC4B)
