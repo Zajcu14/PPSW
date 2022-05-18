@@ -10,56 +10,6 @@ Project File Date:  05/12/2022
 Rebuild target 'Target 1'
 assembling Startup.s...
 compiling keyboard.c...
-..\Archive\6_AUTOMATY\keyboard.h(3): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
-..\Archive\6_AUTOMATY\keyboard.h(4): warning:  #1-D: last line of file ends without a newline
-..\Archive\6_AUTOMATY\keyboard.h(4): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
-..\Archive\6_AUTOMATY\keyboard.c(25): warning:  #1-D: last line of file ends without a newline
-compiling led.c...
-..\Archive\6_AUTOMATY\led.h(3): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\Archive\6_AUTOMATY\led.h(5): warning:  #1-D: last line of file ends without a newline
-..\Archive\6_AUTOMATY\led.c(57): warning:  #1-D: last line of file ends without a newline
-compiling main.c...
-..\Archive\6_AUTOMATY\led.h(3): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\Archive\6_AUTOMATY\led.h(5): warning:  #1-D: last line of file ends without a newline
-..\Archive\6_AUTOMATY\keyboard.h(3): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
-..\Archive\6_AUTOMATY\keyboard.h(4): warning:  #1-D: last line of file ends without a newline
-..\Archive\6_AUTOMATY\keyboard.h(4): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
-..\Archive\6_AUTOMATY\main.c(27): warning:  #223-D: function "InitTimer0Match0" declared implicitly
-..\Archive\6_AUTOMATY\main.c(28): warning:  #223-D: function "WaitOnTimer0Match0" declared implicitly
-compiling timer.c...
-..\Archive\7_TIMER\timer.h(4): warning:  #1-D: last line of file ends without a newline
-..\Archive\7_TIMER\timer.c(33): warning:  #1-D: last line of file ends without a newline
-linking...
-Program Size: Code=748 RO-data=32 RW-data=8 ZI-data=1256  
-".\PRZERWANIA.axf" - 0 Errors, 16 Warning(s).
-Rebuild target 'Target 1'
-assembling Startup.s...
-compiling keyboard.c...
-..\Archive\6_AUTOMATY\keyboard.h(3): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
-..\Archive\6_AUTOMATY\keyboard.h(4): warning:  #1-D: last line of file ends without a newline
-..\Archive\6_AUTOMATY\keyboard.h(4): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
-..\Archive\6_AUTOMATY\keyboard.c(25): warning:  #1-D: last line of file ends without a newline
-compiling led.c...
-..\Archive\6_AUTOMATY\led.h(3): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\Archive\6_AUTOMATY\led.h(5): warning:  #1-D: last line of file ends without a newline
-..\Archive\6_AUTOMATY\led.c(57): warning:  #1-D: last line of file ends without a newline
-compiling main.c...
-..\Archive\6_AUTOMATY\led.h(3): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\Archive\6_AUTOMATY\led.h(5): warning:  #1-D: last line of file ends without a newline
-..\Archive\6_AUTOMATY\keyboard.h(3): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
-..\Archive\6_AUTOMATY\keyboard.h(4): warning:  #1-D: last line of file ends without a newline
-..\Archive\6_AUTOMATY\keyboard.h(4): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
-..\Archive\6_AUTOMATY\main.c(27): warning:  #223-D: function "InitTimer0Match0" declared implicitly
-..\Archive\6_AUTOMATY\main.c(28): warning:  #223-D: function "WaitOnTimer0Match0" declared implicitly
-compiling timer.c...
-..\Archive\7_TIMER\timer.h(4): warning:  #1-D: last line of file ends without a newline
-..\Archive\7_TIMER\timer.c(33): warning:  #1-D: last line of file ends without a newline
-linking...
-Program Size: Code=748 RO-data=32 RW-data=8 ZI-data=1256  
-".\PRZERWANIA.axf" - 0 Errors, 16 Warning(s).
-Rebuild target 'Target 1'
-assembling Startup.s...
-compiling keyboard.c...
 keyboard.h(3): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
 keyboard.h(4): warning:  #1-D: last line of file ends without a newline
 keyboard.h(4): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
@@ -67,374 +17,19 @@ keyboard.c(25): warning:  #1-D: last line of file ends without a newline
 compiling led.c...
 led.h(3): warning:  #1295-D: Deprecated declaration LedInit - give arg types
 led.h(5): warning:  #1-D: last line of file ends without a newline
-led.c(57): warning:  #1-D: last line of file ends without a newline
+led.c(59): warning:  #1-D: last line of file ends without a newline
 compiling main.c...
 led.h(3): warning:  #1295-D: Deprecated declaration LedInit - give arg types
 led.h(5): warning:  #1-D: last line of file ends without a newline
 keyboard.h(3): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
 keyboard.h(4): warning:  #1-D: last line of file ends without a newline
 keyboard.h(4): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
-main.c(27): warning:  #223-D: function "InitTimer0Match0" declared implicitly
-main.c(28): warning:  #223-D: function "WaitOnTimer0Match0" declared implicitly
-compiling timer.c...
-timer.h(4): warning:  #1-D: last line of file ends without a newline
-timer.c(33): warning:  #1-D: last line of file ends without a newline
-linking...
-Program Size: Code=748 RO-data=32 RW-data=8 ZI-data=1256  
-".\PRZERWANIA.axf" - 0 Errors, 16 Warning(s).
-Rebuild target 'Target 1'
-assembling Startup.s...
-compiling keyboard.c...
-keyboard.h(3): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
-keyboard.h(4): warning:  #1-D: last line of file ends without a newline
-keyboard.h(4): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
-keyboard.c(25): warning:  #1-D: last line of file ends without a newline
-compiling led.c...
-led.h(3): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-led.h(5): warning:  #1-D: last line of file ends without a newline
-led.c(57): warning:  #1-D: last line of file ends without a newline
-compiling main.c...
-led.h(3): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-led.h(5): warning:  #1-D: last line of file ends without a newline
-keyboard.h(3): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
-keyboard.h(4): warning:  #1-D: last line of file ends without a newline
-keyboard.h(4): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
-main.c(27): warning:  #223-D: function "InitTimer0Match0" declared implicitly
-main.c(28): warning:  #223-D: function "WaitOnTimer0Match0" declared implicitly
-compiling timer.c...
-timer.h(4): warning:  #1-D: last line of file ends without a newline
-timer.c(33): warning:  #1-D: last line of file ends without a newline
-linking...
-Program Size: Code=748 RO-data=32 RW-data=8 ZI-data=1256  
-".\PRZERWANIA.axf" - 0 Errors, 16 Warning(s).
-Rebuild target 'Target 1'
-assembling Startup.s...
-compiling keyboard.c...
-keyboard.h(3): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
-keyboard.h(4): warning:  #1-D: last line of file ends without a newline
-keyboard.h(4): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
-keyboard.c(25): warning:  #1-D: last line of file ends without a newline
-compiling led.c...
-led.h(3): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-led.h(5): warning:  #1-D: last line of file ends without a newline
-led.c(57): warning:  #1-D: last line of file ends without a newline
-compiling main.c...
-led.h(3): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-led.h(5): warning:  #1-D: last line of file ends without a newline
-keyboard.h(3): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
-keyboard.h(4): warning:  #1-D: last line of file ends without a newline
-keyboard.h(4): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
-main.c(27): warning:  #223-D: function "InitTimer0Match0" declared implicitly
-main.c(28): warning:  #223-D: function "WaitOnTimer0Match0" declared implicitly
-compiling timer.c...
-timer.h(4): warning:  #1-D: last line of file ends without a newline
-timer.c(33): warning:  #1-D: last line of file ends without a newline
-linking...
-Program Size: Code=748 RO-data=32 RW-data=8 ZI-data=1256  
-".\PRZERWANIA.axf" - 0 Errors, 16 Warning(s).
-Rebuild target 'Target 1'
-assembling Startup.s...
-compiling keyboard.c...
-keyboard.h(3): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
-keyboard.h(4): warning:  #1-D: last line of file ends without a newline
-keyboard.h(4): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
-keyboard.c(25): warning:  #1-D: last line of file ends without a newline
-compiling led.c...
-led.h(3): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-led.h(5): warning:  #1-D: last line of file ends without a newline
-led.c(57): warning:  #1-D: last line of file ends without a newline
-compiling main.c...
-led.h(3): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-led.h(5): warning:  #1-D: last line of file ends without a newline
-main.c(24): warning:  #223-D: function "Led_StepRight" declared implicitly
-main.c(54): warning:  #1-D: last line of file ends without a newline
-compiling timer.c...
-timer.h(4): warning:  #1-D: last line of file ends without a newline
-timer.c(33): warning:  #1-D: last line of file ends without a newline
-linking...
-.\PRZERWANIA.axf: Error: L6218E: Undefined symbol Led_StepRight (referred from main.o).
-".\PRZERWANIA.axf" - 1 Errors, 13 Warning(s).
-Target not created
-Build target 'Target 1'
-compiling keyboard.c...
-keyboard.h(3): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
-keyboard.h(4): warning:  #1-D: last line of file ends without a newline
-keyboard.h(4): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
-keyboard.c(25): warning:  #1-D: last line of file ends without a newline
-compiling led.c...
-led.h(3): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-led.h(5): warning:  #1-D: last line of file ends without a newline
-led.c(57): warning:  #1-D: last line of file ends without a newline
-compiling main.c...
-led.h(3): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-led.h(5): warning:  #1-D: last line of file ends without a newline
-main.c(24): warning:  #223-D: function "Led_StepRight" declared implicitly
-main.c(54): warning:  #1-D: last line of file ends without a newline
-compiling timer.c...
-timer.h(4): warning:  #1-D: last line of file ends without a newline
-timer.c(33): warning:  #1-D: last line of file ends without a newline
-linking...
-.\PRZERWANIA.axf: Error: L6218E: Undefined symbol Led_StepRight (referred from main.o).
-".\PRZERWANIA.axf" - 1 Errors, 13 Warning(s).
-Target not created
-Rebuild target 'Target 1'
-assembling Startup.s...
-compiling keyboard.c...
-keyboard.h(3): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
-keyboard.h(4): warning:  #1-D: last line of file ends without a newline
-keyboard.h(4): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
-keyboard.c(25): warning:  #1-D: last line of file ends without a newline
-compiling led.c...
-led.h(3): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-led.h(5): warning:  #1-D: last line of file ends without a newline
-led.c(57): warning:  #1-D: last line of file ends without a newline
-compiling main.c...
-led.h(3): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-led.h(5): warning:  #1-D: last line of file ends without a newline
-main.c(54): warning:  #1-D: last line of file ends without a newline
-compiling timer.c...
-timer.h(4): warning:  #1-D: last line of file ends without a newline
-timer.c(33): warning:  #1-D: last line of file ends without a newline
-linking...
-Program Size: Code=556 RO-data=16 RW-data=0 ZI-data=1256  
-".\PRZERWANIA.axf" - 0 Errors, 12 Warning(s).
-Rebuild target 'Target 1'
-assembling Startup.s...
-compiling keyboard.c...
-keyboard.h(3): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
-keyboard.h(4): warning:  #1-D: last line of file ends without a newline
-keyboard.h(4): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
-keyboard.c(25): warning:  #1-D: last line of file ends without a newline
-compiling led.c...
-led.h(3): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-led.h(5): warning:  #1-D: last line of file ends without a newline
-led.c(57): warning:  #1-D: last line of file ends without a newline
-compiling main.c...
-led.h(3): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-led.h(5): warning:  #1-D: last line of file ends without a newline
-main.c(54): warning:  #1-D: last line of file ends without a newline
-compiling timer.c...
-timer.h(4): warning:  #1-D: last line of file ends without a newline
-timer.c(33): warning:  #1-D: last line of file ends without a newline
-linking...
-Program Size: Code=932 RO-data=32 RW-data=4 ZI-data=1260  
-".\PRZERWANIA.axf" - 0 Errors, 12 Warning(s).
-Rebuild target 'Target 1'
-assembling Startup.s...
-compiling keyboard.c...
-keyboard.h(3): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
-keyboard.h(4): warning:  #1-D: last line of file ends without a newline
-keyboard.h(4): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
-keyboard.c(25): warning:  #1-D: last line of file ends without a newline
-compiling led.c...
-led.h(3): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-led.h(5): warning:  #1-D: last line of file ends without a newline
-led.c(57): warning:  #1-D: last line of file ends without a newline
-compiling main.c...
-led.h(3): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-led.h(5): warning:  #1-D: last line of file ends without a newline
-main.c(55): warning:  #1-D: last line of file ends without a newline
-compiling timer.c...
-timer.h(4): warning:  #1-D: last line of file ends without a newline
-timer.c(33): warning:  #1-D: last line of file ends without a newline
-linking...
-Program Size: Code=936 RO-data=32 RW-data=4 ZI-data=1260  
-".\PRZERWANIA.axf" - 0 Errors, 12 Warning(s).
-Rebuild target 'Target 1'
-assembling Startup.s...
-compiling keyboard.c...
-keyboard.h(3): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
-keyboard.h(4): warning:  #1-D: last line of file ends without a newline
-keyboard.h(4): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
-keyboard.c(25): warning:  #1-D: last line of file ends without a newline
-compiling led.c...
-led.h(3): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-led.h(5): warning:  #1-D: last line of file ends without a newline
-led.c(57): warning:  #1-D: last line of file ends without a newline
-compiling main.c...
-led.h(3): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-led.h(5): warning:  #1-D: last line of file ends without a newline
-main.c(58): warning:  #1-D: last line of file ends without a newline
-compiling timer.c...
-timer.h(4): warning:  #1-D: last line of file ends without a newline
-timer.c(33): warning:  #1-D: last line of file ends without a newline
-linking...
-Program Size: Code=960 RO-data=32 RW-data=8 ZI-data=1256  
-".\PRZERWANIA.axf" - 0 Errors, 12 Warning(s).
-Rebuild target 'Target 1'
-assembling Startup.s...
-compiling keyboard.c...
-keyboard.h(3): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
-keyboard.h(4): warning:  #1-D: last line of file ends without a newline
-keyboard.h(4): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
-keyboard.c(25): warning:  #1-D: last line of file ends without a newline
-compiling led.c...
-led.h(3): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-led.h(5): warning:  #1-D: last line of file ends without a newline
-led.c(57): warning:  #1-D: last line of file ends without a newline
-compiling main.c...
-led.h(3): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-led.h(5): warning:  #1-D: last line of file ends without a newline
-main.c(24): warning:  #223-D: function "Led_StepRight" declared implicitly
-main.c(54): warning:  #1-D: last line of file ends without a newline
-compiling timer.c...
-timer.h(4): warning:  #1-D: last line of file ends without a newline
-timer.c(33): warning:  #1-D: last line of file ends without a newline
-linking...
-.\PRZERWANIA.axf: Error: L6218E: Undefined symbol Led_StepRight (referred from main.o).
-".\PRZERWANIA.axf" - 1 Errors, 13 Warning(s).
-Target not created
-Rebuild target 'Target 1'
-assembling Startup.s...
-compiling keyboard.c...
-keyboard.h(3): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
-keyboard.h(4): warning:  #1-D: last line of file ends without a newline
-keyboard.h(4): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
-keyboard.c(25): warning:  #1-D: last line of file ends without a newline
-compiling led.c...
-led.h(3): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-led.h(5): warning:  #1-D: last line of file ends without a newline
-led.c(57): warning:  #1-D: last line of file ends without a newline
-compiling main.c...
-led.h(3): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-led.h(5): warning:  #1-D: last line of file ends without a newline
-main.c(54): warning:  #1-D: last line of file ends without a newline
-compiling timer.c...
-timer.h(4): warning:  #1-D: last line of file ends without a newline
-timer.c(33): warning:  #1-D: last line of file ends without a newline
-linking...
-Program Size: Code=928 RO-data=32 RW-data=4 ZI-data=1260  
-".\PRZERWANIA.axf" - 0 Errors, 12 Warning(s).
-Rebuild target 'Target 1'
-assembling Startup.s...
-compiling keyboard.c...
-keyboard.h(3): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
-keyboard.h(4): warning:  #1-D: last line of file ends without a newline
-keyboard.h(4): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
-keyboard.c(25): warning:  #1-D: last line of file ends without a newline
-compiling led.c...
-led.h(3): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-led.h(5): warning:  #1-D: last line of file ends without a newline
-led.c(57): warning:  #1-D: last line of file ends without a newline
-compiling main.c...
-led.h(3): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-led.h(5): warning:  #1-D: last line of file ends without a newline
-main.c(55): warning:  #1-D: last line of file ends without a newline
-compiling timer.c...
-timer.h(4): warning:  #1-D: last line of file ends without a newline
-timer.c(33): warning:  #1-D: last line of file ends without a newline
-linking...
-Program Size: Code=952 RO-data=32 RW-data=8 ZI-data=1256  
-".\PRZERWANIA.axf" - 0 Errors, 12 Warning(s).
-Rebuild target 'Target 1'
-assembling Startup.s...
-compiling keyboard.c...
-keyboard.h(3): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
-keyboard.h(4): warning:  #1-D: last line of file ends without a newline
-keyboard.h(4): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
-keyboard.c(25): warning:  #1-D: last line of file ends without a newline
-compiling led.c...
-led.h(3): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-led.h(5): warning:  #1-D: last line of file ends without a newline
-led.c(57): warning:  #1-D: last line of file ends without a newline
-compiling main.c...
-led.h(3): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-led.h(5): warning:  #1-D: last line of file ends without a newline
-main.c(58): warning:  #1-D: last line of file ends without a newline
-compiling timer.c...
-timer.h(4): warning:  #1-D: last line of file ends without a newline
-timer.c(33): warning:  #1-D: last line of file ends without a newline
-linking...
-Program Size: Code=960 RO-data=32 RW-data=8 ZI-data=1256  
-".\PRZERWANIA.axf" - 0 Errors, 12 Warning(s).
-Rebuild target 'Target 1'
-assembling Startup.s...
-compiling keyboard.c...
-keyboard.h(3): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
-keyboard.h(4): warning:  #1-D: last line of file ends without a newline
-keyboard.h(4): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
-keyboard.c(25): warning:  #1-D: last line of file ends without a newline
-compiling led.c...
-led.h(3): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-led.h(5): warning:  #1-D: last line of file ends without a newline
-led.c(57): warning:  #1-D: last line of file ends without a newline
-compiling main.c...
-led.h(3): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-led.h(5): warning:  #1-D: last line of file ends without a newline
-main.c(58): warning:  #1-D: last line of file ends without a newline
-compiling timer.c...
-timer.h(4): warning:  #1-D: last line of file ends without a newline
-timer.c(33): warning:  #1-D: last line of file ends without a newline
-linking...
-Program Size: Code=960 RO-data=32 RW-data=8 ZI-data=1256  
-".\PRZERWANIA.axf" - 0 Errors, 12 Warning(s).
-Rebuild target 'Target 1'
-assembling Startup.s...
-compiling keyboard.c...
-keyboard.h(3): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
-keyboard.h(4): warning:  #1-D: last line of file ends without a newline
-keyboard.h(4): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
-keyboard.c(25): warning:  #1-D: last line of file ends without a newline
-compiling led.c...
-led.h(3): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-led.h(5): warning:  #1-D: last line of file ends without a newline
-led.c(57): warning:  #1-D: last line of file ends without a newline
-compiling main.c...
-led.h(3): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-led.h(5): warning:  #1-D: last line of file ends without a newline
-main.c(58): warning:  #1-D: last line of file ends without a newline
-compiling timer.c...
-timer.h(4): warning:  #1-D: last line of file ends without a newline
-timer.c(33): warning:  #1-D: last line of file ends without a newline
-linking...
-Program Size: Code=960 RO-data=32 RW-data=8 ZI-data=1256  
-".\PRZERWANIA.axf" - 0 Errors, 12 Warning(s).
-Rebuild target 'Target 1'
-assembling Startup.s...
-compiling keyboard.c...
-keyboard.h(3): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
-keyboard.h(4): warning:  #1-D: last line of file ends without a newline
-keyboard.h(4): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
-keyboard.c(25): warning:  #1-D: last line of file ends without a newline
-compiling led.c...
-led.h(3): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-led.h(5): warning:  #1-D: last line of file ends without a newline
-led.c(57): warning:  #1-D: last line of file ends without a newline
-compiling main.c...
-led.h(3): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-led.h(5): warning:  #1-D: last line of file ends without a newline
-main.c(58): warning:  #1-D: last line of file ends without a newline
-compiling timer.c...
-timer.h(4): warning:  #1-D: last line of file ends without a newline
-timer.c(33): warning:  #1-D: last line of file ends without a newline
-linking...
-Program Size: Code=960 RO-data=32 RW-data=8 ZI-data=1256  
-".\PRZERWANIA.axf" - 0 Errors, 12 Warning(s).
-Build target 'Target 1'
-compiling main.c...
-led.h(3): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-led.h(5): warning:  #1-D: last line of file ends without a newline
-main.c(58): warning:  #1-D: last line of file ends without a newline
-linking...
-Program Size: Code=952 RO-data=32 RW-data=8 ZI-data=1256  
-".\PRZERWANIA.axf" - 0 Errors, 3 Warning(s).
-Rebuild target 'Target 1'
-assembling Startup.s...
-compiling keyboard.c...
-keyboard.h(3): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
-keyboard.h(4): warning:  #1-D: last line of file ends without a newline
-keyboard.h(4): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
-keyboard.c(25): warning:  #1-D: last line of file ends without a newline
-compiling led.c...
-led.h(3): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-led.h(5): warning:  #1-D: last line of file ends without a newline
-led.c(57): warning:  #1-D: last line of file ends without a newline
-compiling main.c...
-led.h(3): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-led.h(5): warning:  #1-D: last line of file ends without a newline
 timer_interrupts.h(1): warning:  #1295-D: Deprecated declaration Timer1IRQHandler - give arg types
 timer_interrupts.h(2): warning:  #1-D: last line of file ends without a newline
-main.c(19): warning:  #1-D: last line of file ends without a newline
+main.c(43): warning:  #223-D: function "eReadDetector" declared implicitly
+main.c(65): error:  #159: declaration is incompatible with previous "eReadDetector" (declared at line 43)
+main.c(100): warning:  #1-D: last line of file ends without a newline
+main.c(76): warning:  #177-D: variable "iMainLoopCtr" was declared but never referenced
 compiling timer.c...
 timer.h(4): warning:  #1-D: last line of file ends without a newline
 timer.c(33): warning:  #1-D: last line of file ends without a newline
@@ -443,7 +38,264 @@ led.h(3): warning:  #1295-D: Deprecated declaration LedInit - give arg types
 led.h(5): warning:  #1-D: last line of file ends without a newline
 timer_interrupts.h(1): warning:  #1295-D: Deprecated declaration Timer1IRQHandler - give arg types
 timer_interrupts.h(2): warning:  #1-D: last line of file ends without a newline
-timer_interrupts.c(48): warning:  #1-D: last line of file ends without a newline
+timer_interrupts.c(52): warning:  #1-D: last line of file ends without a newline
+".\PRZERWANIA.axf" - 1 Errors, 24 Warning(s).
+Target not created
+Rebuild target 'Target 1'
+assembling Startup.s...
+compiling keyboard.c...
+keyboard.h(3): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
+keyboard.h(4): warning:  #1-D: last line of file ends without a newline
+keyboard.h(4): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
+keyboard.c(25): warning:  #1-D: last line of file ends without a newline
+compiling led.c...
+led.h(3): warning:  #1295-D: Deprecated declaration LedInit - give arg types
+led.h(5): warning:  #1-D: last line of file ends without a newline
+led.c(59): warning:  #1-D: last line of file ends without a newline
+compiling main.c...
+led.h(3): warning:  #1295-D: Deprecated declaration LedInit - give arg types
+led.h(5): warning:  #1-D: last line of file ends without a newline
+keyboard.h(3): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
+keyboard.h(4): warning:  #1-D: last line of file ends without a newline
+keyboard.h(4): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
+timer_interrupts.h(1): warning:  #1295-D: Deprecated declaration Timer1IRQHandler - give arg types
+timer_interrupts.h(2): warning:  #1-D: last line of file ends without a newline
+servo.h(13): warning:  #1-D: last line of file ends without a newline
+main.c(41): warning:  #1-D: last line of file ends without a newline
+main.c(15): warning:  #177-D: variable "iMainLoopCtr" was declared but never referenced
+compiling timer.c...
+timer.h(4): warning:  #1-D: last line of file ends without a newline
+timer.c(33): warning:  #1-D: last line of file ends without a newline
+compiling timer_interrupts.c...
+led.h(3): warning:  #1295-D: Deprecated declaration LedInit - give arg types
+led.h(5): warning:  #1-D: last line of file ends without a newline
+timer_interrupts.h(1): warning:  #1295-D: Deprecated declaration Timer1IRQHandler - give arg types
+timer_interrupts.h(2): warning:  #1-D: last line of file ends without a newline
+timer_interrupts.c(52): warning:  #1-D: last line of file ends without a newline
+compiling servo.c...
+servo.h(13): warning:  #1-D: last line of file ends without a newline
+led.h(3): warning:  #1295-D: Deprecated declaration LedInit - give arg types
+led.h(5): warning:  #1-D: last line of file ends without a newline
+servo.c(62): warning:  #223-D: function "Timer1Interrupts_Init" declared implicitly
+servo.c(71): warning:  #1-D: last line of file ends without a newline
 linking...
-Program Size: Code=928 RO-data=32 RW-data=4 ZI-data=1260  
+Program Size: Code=2044 RO-data=32 RW-data=8 ZI-data=1272  
+".\PRZERWANIA.axf" - 0 Errors, 29 Warning(s).
+Rebuild target 'Target 1'
+assembling Startup.s...
+compiling keyboard.c...
+keyboard.h(4): warning:  #1-D: last line of file ends without a newline
+keyboard.c(25): warning:  #1-D: last line of file ends without a newline
+compiling led.c...
+led.h(3): warning:  #1295-D: Deprecated declaration LedInit - give arg types
+led.h(5): warning:  #1-D: last line of file ends without a newline
+led.c(59): warning:  #1-D: last line of file ends without a newline
+compiling main.c...
+led.h(3): warning:  #1295-D: Deprecated declaration LedInit - give arg types
+led.h(5): warning:  #1-D: last line of file ends without a newline
+keyboard.h(4): warning:  #1-D: last line of file ends without a newline
+timer_interrupts.h(1): warning:  #1295-D: Deprecated declaration Timer1IRQHandler - give arg types
+timer_interrupts.h(2): warning:  #1-D: last line of file ends without a newline
+servo.h(13): warning:  #1-D: last line of file ends without a newline
+main.c(34): warning:  #1-D: last line of file ends without a newline
+main.c(8): warning:  #177-D: variable "iMainLoopCtr" was declared but never referenced
+compiling timer.c...
+timer.h(4): warning:  #1-D: last line of file ends without a newline
+timer.c(33): warning:  #1-D: last line of file ends without a newline
+compiling timer_interrupts.c...
+led.h(3): warning:  #1295-D: Deprecated declaration LedInit - give arg types
+led.h(5): warning:  #1-D: last line of file ends without a newline
+timer_interrupts.h(1): warning:  #1295-D: Deprecated declaration Timer1IRQHandler - give arg types
+timer_interrupts.h(2): warning:  #1-D: last line of file ends without a newline
+timer_interrupts.c(52): warning:  #1-D: last line of file ends without a newline
+compiling servo.c...
+servo.h(13): warning:  #1-D: last line of file ends without a newline
+led.h(3): warning:  #1295-D: Deprecated declaration LedInit - give arg types
+led.h(5): warning:  #1-D: last line of file ends without a newline
+servo.c(62): warning:  #223-D: function "Timer1Interrupts_Init" declared implicitly
+servo.c(71): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=2044 RO-data=32 RW-data=8 ZI-data=1272  
+".\PRZERWANIA.axf" - 0 Errors, 25 Warning(s).
+Rebuild target 'Target 1'
+assembling Startup.s...
+compiling keyboard.c...
+keyboard.h(4): warning:  #1-D: last line of file ends without a newline
+keyboard.c(25): warning:  #1-D: last line of file ends without a newline
+compiling led.c...
+led.h(5): warning:  #1-D: last line of file ends without a newline
+led.c(59): warning:  #1-D: last line of file ends without a newline
+compiling main.c...
+led.h(5): warning:  #1-D: last line of file ends without a newline
+keyboard.h(4): warning:  #1-D: last line of file ends without a newline
+timer_interrupts.h(1): warning:  #1295-D: Deprecated declaration Timer1IRQHandler - give arg types
+timer_interrupts.h(2): warning:  #1-D: last line of file ends without a newline
+servo.h(13): warning:  #1-D: last line of file ends without a newline
+main.c(34): warning:  #1-D: last line of file ends without a newline
+main.c(8): warning:  #177-D: variable "iMainLoopCtr" was declared but never referenced
+compiling timer.c...
+timer.h(4): warning:  #1-D: last line of file ends without a newline
+timer.c(33): warning:  #1-D: last line of file ends without a newline
+compiling timer_interrupts.c...
+led.h(5): warning:  #1-D: last line of file ends without a newline
+timer_interrupts.h(1): warning:  #1295-D: Deprecated declaration Timer1IRQHandler - give arg types
+timer_interrupts.h(2): warning:  #1-D: last line of file ends without a newline
+timer_interrupts.c(52): warning:  #1-D: last line of file ends without a newline
+compiling servo.c...
+servo.h(13): warning:  #1-D: last line of file ends without a newline
+led.h(5): warning:  #1-D: last line of file ends without a newline
+servo.c(62): warning:  #223-D: function "Timer1Interrupts_Init" declared implicitly
+servo.c(71): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=2044 RO-data=32 RW-data=8 ZI-data=1272  
+".\PRZERWANIA.axf" - 0 Errors, 21 Warning(s).
+Rebuild target 'Target 1'
+assembling Startup.s...
+compiling keyboard.c...
+keyboard.h(4): warning:  #1-D: last line of file ends without a newline
+keyboard.c(25): warning:  #1-D: last line of file ends without a newline
+compiling led.c...
+led.h(5): warning:  #1-D: last line of file ends without a newline
+led.c(59): warning:  #1-D: last line of file ends without a newline
+compiling main.c...
+led.h(5): warning:  #1-D: last line of file ends without a newline
+keyboard.h(4): warning:  #1-D: last line of file ends without a newline
+timer_interrupts.h(2): warning:  #1-D: last line of file ends without a newline
+servo.h(13): warning:  #1-D: last line of file ends without a newline
+main.c(34): warning:  #1-D: last line of file ends without a newline
+main.c(8): warning:  #177-D: variable "iMainLoopCtr" was declared but never referenced
+compiling timer.c...
+timer.h(4): warning:  #1-D: last line of file ends without a newline
+timer.c(33): warning:  #1-D: last line of file ends without a newline
+compiling timer_interrupts.c...
+led.h(5): warning:  #1-D: last line of file ends without a newline
+timer_interrupts.h(2): warning:  #1-D: last line of file ends without a newline
+timer_interrupts.c(52): warning:  #1-D: last line of file ends without a newline
+compiling servo.c...
+servo.h(13): warning:  #1-D: last line of file ends without a newline
+led.h(5): warning:  #1-D: last line of file ends without a newline
+servo.c(62): warning:  #223-D: function "Timer1Interrupts_Init" declared implicitly
+servo.c(71): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=2044 RO-data=32 RW-data=8 ZI-data=1272  
 ".\PRZERWANIA.axf" - 0 Errors, 19 Warning(s).
+Rebuild target 'Target 1'
+assembling Startup.s...
+compiling keyboard.c...
+keyboard.h(4): warning:  #1-D: last line of file ends without a newline
+keyboard.c(25): warning:  #1-D: last line of file ends without a newline
+compiling led.c...
+led.h(5): warning:  #1-D: last line of file ends without a newline
+led.c(59): warning:  #1-D: last line of file ends without a newline
+compiling main.c...
+led.h(5): warning:  #1-D: last line of file ends without a newline
+keyboard.h(4): warning:  #1-D: last line of file ends without a newline
+timer_interrupts.h(2): warning:  #1-D: last line of file ends without a newline
+servo.h(13): warning:  #1-D: last line of file ends without a newline
+main.c(34): warning:  #1-D: last line of file ends without a newline
+main.c(8): warning:  #177-D: variable "iMainLoopCtr" was declared but never referenced
+compiling timer.c...
+timer.h(4): warning:  #1-D: last line of file ends without a newline
+timer.c(33): warning:  #1-D: last line of file ends without a newline
+compiling timer_interrupts.c...
+led.h(5): warning:  #1-D: last line of file ends without a newline
+timer_interrupts.h(2): warning:  #1-D: last line of file ends without a newline
+timer_interrupts.c(52): warning:  #1-D: last line of file ends without a newline
+compiling servo.c...
+servo.h(13): warning:  #1-D: last line of file ends without a newline
+led.h(5): warning:  #1-D: last line of file ends without a newline
+servo.c(62): warning:  #223-D: function "Timer1Interrupts_Init" declared implicitly
+servo.c(71): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=2044 RO-data=32 RW-data=8 ZI-data=1272  
+".\PRZERWANIA.axf" - 0 Errors, 19 Warning(s).
+Rebuild target 'Target 1'
+assembling Startup.s...
+compiling keyboard.c...
+keyboard.h(4): warning:  #1-D: last line of file ends without a newline
+keyboard.c(25): warning:  #1-D: last line of file ends without a newline
+compiling led.c...
+led.h(5): warning:  #1-D: last line of file ends without a newline
+led.c(59): warning:  #1-D: last line of file ends without a newline
+compiling main.c...
+led.h(5): warning:  #1-D: last line of file ends without a newline
+keyboard.h(4): warning:  #1-D: last line of file ends without a newline
+timer_interrupts.h(2): warning:  #1-D: last line of file ends without a newline
+servo.h(13): warning:  #1-D: last line of file ends without a newline
+main.c(34): warning:  #1-D: last line of file ends without a newline
+main.c(8): warning:  #177-D: variable "iMainLoopCtr" was declared but never referenced
+compiling timer.c...
+timer.h(4): warning:  #1-D: last line of file ends without a newline
+timer.c(33): warning:  #1-D: last line of file ends without a newline
+compiling timer_interrupts.c...
+led.h(5): warning:  #1-D: last line of file ends without a newline
+timer_interrupts.h(2): warning:  #1-D: last line of file ends without a newline
+timer_interrupts.c(52): warning:  #1-D: last line of file ends without a newline
+compiling servo.c...
+servo.h(13): warning:  #1-D: last line of file ends without a newline
+led.h(5): warning:  #1-D: last line of file ends without a newline
+timer.h(4): warning:  #1-D: last line of file ends without a newline
+servo.c(63): warning:  #223-D: function "Timer1Interrupts_Init" declared implicitly
+servo.c(72): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=2044 RO-data=32 RW-data=8 ZI-data=1272  
+".\PRZERWANIA.axf" - 0 Errors, 20 Warning(s).
+Rebuild target 'Target 1'
+assembling Startup.s...
+compiling keyboard.c...
+keyboard.h(4): warning:  #1-D: last line of file ends without a newline
+keyboard.c(25): warning:  #1-D: last line of file ends without a newline
+compiling led.c...
+led.h(5): warning:  #1-D: last line of file ends without a newline
+led.c(59): warning:  #1-D: last line of file ends without a newline
+compiling main.c...
+led.h(5): warning:  #1-D: last line of file ends without a newline
+keyboard.h(4): warning:  #1-D: last line of file ends without a newline
+timer_interrupts.h(2): warning:  #1-D: last line of file ends without a newline
+servo.h(13): warning:  #1-D: last line of file ends without a newline
+main.c(34): warning:  #1-D: last line of file ends without a newline
+main.c(8): warning:  #177-D: variable "iMainLoopCtr" was declared but never referenced
+compiling timer.c...
+timer.h(4): warning:  #1-D: last line of file ends without a newline
+timer.c(33): warning:  #1-D: last line of file ends without a newline
+compiling timer_interrupts.c...
+led.h(5): warning:  #1-D: last line of file ends without a newline
+timer_interrupts.h(2): warning:  #1-D: last line of file ends without a newline
+timer_interrupts.c(52): warning:  #1-D: last line of file ends without a newline
+compiling servo.c...
+servo.h(13): warning:  #1-D: last line of file ends without a newline
+led.h(5): warning:  #1-D: last line of file ends without a newline
+timer_interrupts.h(2): warning:  #1-D: last line of file ends without a newline
+servo.c(72): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=2044 RO-data=32 RW-data=8 ZI-data=1272  
+".\PRZERWANIA.axf" - 0 Errors, 19 Warning(s).
+Rebuild target 'Target 1'
+assembling Startup.s...
+compiling keyboard.c...
+keyboard.h(4): warning:  #1-D: last line of file ends without a newline
+keyboard.c(25): warning:  #1-D: last line of file ends without a newline
+compiling led.c...
+led.h(5): warning:  #1-D: last line of file ends without a newline
+led.c(59): warning:  #1-D: last line of file ends without a newline
+compiling main.c...
+led.h(5): warning:  #1-D: last line of file ends without a newline
+keyboard.h(4): warning:  #1-D: last line of file ends without a newline
+timer_interrupts.h(2): warning:  #1-D: last line of file ends without a newline
+servo.h(13): warning:  #1-D: last line of file ends without a newline
+main.c(34): warning:  #1-D: last line of file ends without a newline
+compiling timer.c...
+timer.h(4): warning:  #1-D: last line of file ends without a newline
+timer.c(33): warning:  #1-D: last line of file ends without a newline
+compiling timer_interrupts.c...
+led.h(5): warning:  #1-D: last line of file ends without a newline
+timer_interrupts.h(2): warning:  #1-D: last line of file ends without a newline
+timer_interrupts.c(52): warning:  #1-D: last line of file ends without a newline
+compiling servo.c...
+servo.h(13): warning:  #1-D: last line of file ends without a newline
+led.h(5): warning:  #1-D: last line of file ends without a newline
+timer_interrupts.h(2): warning:  #1-D: last line of file ends without a newline
+servo.c(72): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=2044 RO-data=32 RW-data=8 ZI-data=1272  
+".\PRZERWANIA.axf" - 0 Errors, 18 Warning(s).
