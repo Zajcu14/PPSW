@@ -18,7 +18,7 @@ void LedInit(){
 
 	  IO1DIR=IO1DIR|(LED0_bm|LED1_bm|LED2_bm|LED3_bm);
 	  IO1CLR=(LED0_bm|LED1_bm|LED2_bm|LED3_bm);
-	  IO1SET=LED0_bm;
+	  //IO1SET=LED0_bm;
 }
 
 void LedOn(unsigned char ucLedIndeks){
@@ -63,14 +63,17 @@ void LedStepRight(void){
      LedStep(RIGHT);
 }
 
+int iPinCheck=0;
+
 enum KeyBoardsState eKeyboardRead(){
-	  if((IO0PIN^BUT0_bm)==0){
+	  iPinCheck=IO0PIN&BUT0_bm;
+	  if((IO0PIN&BUT0_bm)==BUT0_bm){
 		    return BUTTON_0;
-	  }else if((IO0PIN^BUT1_bm)==0){
+	  }else if((IO0PIN&BUT1_bm)==BUT1_bm){
 		    return BUTTON_1;
-	  }else if((IO0PIN^BUT2_bm)==0){
+	  }else if((IO0PIN&BUT2_bm)==BUT2_bm){
 	      return BUTTON_2;
-	  }else if((IO0PIN^BUT3_bm)==0){
+	  }else if((IO0PIN&BUT3_bm)==BUT2_bm){
 	      return BUTTON_3;
 	  }else{
 	      return RELASED;
@@ -78,7 +81,7 @@ enum KeyBoardsState eKeyboardRead(){
 }
 
 void KeyboardInit(){
-	  IO0DIR=IO0PIN|(BUT0_bm|BUT1_bm|BUT2_bm|BUT3_bm);
+	  IO0DIR=IO0DIR&(~(BUT0_bm|BUT1_bm|BUT2_bm|BUT3_bm));
 }
 
 void Delay(int iMiliSeconds){
@@ -89,25 +92,31 @@ void Delay(int iMiliSeconds){
 
 // 1 sekunda -> 1594000
 
-int main(){
-	IO1DIR=0x800000;
-	LedInit();
 
+
+
+int main(){
+	
+	IO1DIR=0x800000;
+	KeyboardInit();
+	LedInit();
+	
 	while(1){
 
-
+    
+		
 		/*IO1SET=IO1SET|LED0_bm;
-		for(i=0;i<1594000;i++){}
+		Delay(1000);
 		IO1CLR=IO1CLR|LED0_bm;
-		for(i=0;i<1594000;i++){}*/
+		Delay(1000);*/
 
 
-		/*Cwiczenie 8
-		IO1SET=IO1SET|LED0_bm;
+		//Cwiczenie 8
+		/*IO1SET=IO1SET|LED0_bm;
 		Delay(50);
 		IO1CLR=IO1CLR|LED0_bm;
-		Delay(50);
-		*/
+		Delay(50);*/
+		
 
 		/*Cwiczenie 10
 		IO1SET=IO1SET|LED3_bm;
@@ -135,7 +144,18 @@ int main(){
 
 		LedOn(3);
 		Delay(250);*/
-    
+		
+		//Cwiczenie 16
+		
+    /*switch(eKeyboardRead()){
+			 case BUTTON_0:
+               LedOn(1);
+			         break;
+			 default:
+				       LedOn(0);
+			         break;
+		}
+		Delay(500);*/
 
     /*Cwiczenie 19
 		switch(eKeyboardRead()){
@@ -160,7 +180,7 @@ int main(){
 
 		//Cwiczenie 22
 		
-		char cStepCounter;
+		/*char cStepCounter;
 		for(cStepCounter=0;cStepCounter<9;cStepCounter++){
             LedStep(RIGHT);
 						Delay(2000);
@@ -168,15 +188,15 @@ int main(){
 		for(cStepCounter=0;cStepCounter<9;cStepCounter++){
             LedStep(LEFT);
 						Delay(2000);
-		}
+		}*/
 		
 		/*Cwiczenie 24
 		switch(eKeyboardRead()){
          case BUTTON_1:
-               LedStep(RIGHT);
+				       LedStepRight();
 			         break;
          case BUTTON_2:
-               LedStep(LEFT);
+               LedStepLeft();
 				       break;
 				 case RELEASED:
 				       breal;
