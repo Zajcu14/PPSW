@@ -15,9 +15,9 @@ void InitTimer0(void){
 
 
 void WaitOnTimer0(unsigned int uiTime){
-	T0TCR=TIMER0_rst;
-	T0TCR=TIMER0_en;
-	while( T0TC != (15000 * uiTime)){};
+	T0TCR=0x3;
+	T0TCR=0x1;
+	while( T0TC <= (15000 * uiTime)){};
 }
 
 void InitTimer0Match0(unsigned int iDelayTime){

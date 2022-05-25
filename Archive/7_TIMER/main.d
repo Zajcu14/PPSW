@@ -1,3 +1,4 @@
-.\main.o: ..\Archive\6_AUTOMATY\main.c
-.\main.o: ..\Archive\6_AUTOMATY\led.h
-.\main.o: ..\Archive\6_AUTOMATY\keyboard.h
+.\main.o: main.c
+.\main.o: led.h
+.\main.o: keyboard.h
+.\main.o: timer.h

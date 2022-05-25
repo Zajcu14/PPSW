@@ -9,17 +9,20 @@ void Delay(int iMiliSeconds){
 }
 
 
+enum State{STATE0, STATE1, STATE2, STATE3, STATE4, STATE5};
+enum State eState = STATE0;
+
 enum LedState{LED_LEFT, LED_RIGHT};
 enum LedState eLedState = LED_LEFT;
 
-enum State{STATE0, STATE1,STATE2,STATE3,STATE4,STATE5};
-enum State State = STATE0;
+enum MoveDirection{LEFT_MOVE, RIGHT_MOVE, STOP_MOVE};
+enum MoveDirection eDirection = LEFT_MOVE;
 
-enum MovingState{MOVE, STOP};
-enum MovingState Motion = STOP;
+enum Action{MOVE, STOP};
+enum Action eAction = STOP;
 
-enum MovingDirectionState{LEFT_MOVE, RIGHT_MOVE, STOP_MOVE};
-enum MovingDirectionState MotionDirection = STOP_MOVE;
+/*enum MovingDirectionState{LEFT_MOVE, RIGHT_MOVE, STOP_MOVE};
+enum MovingDirectionState MotionDirection = STOP_MOVE;*/
 
 int iStepCounter=0;
 
@@ -29,49 +32,49 @@ int main(){
 		//Cwiczenie 1
 		switch(eLedState){
 			case LED_LEFT:
-			eLedState = LED_RIGHT;
-		  LedStepLeft();
-			break;
+			   eLedState = LED_RIGHT;
+		     LedStepLeft();
+			   break;
 			case LED_RIGHT:
-			eLedState = LED_LEFT;
-		  LedStepRight();
-			break;
+			   eLedState = LED_LEFT;
+		     LedStepRight();
+			   break;
     }
 		
 		//Cwiczenie 2
 		/*switch(State){
 			case STATE0:
-			State = STATE1;
-			LedStepLeft();
-			break;
+			   State = STATE1;
+			   LedStepLeft();
+			   break;
 			case STATE1:
-			State = STATE2;
-			LedStepLeft();
-			break;
+			   State = STATE2;
+			   LedStepLeft();
+			   break;
 			case STATE2:
-			State = STATE3;
-			LedStepLeft();
-			break;
+			   State = STATE3;
+			   LedStepLeft();
+			   break;
 			case STATE3:
-			State = STATE4;
-			LedStepRight();
-			break;
+			   State = STATE4;
+			   LedStepRight();
+			   break;
 			case STATE4:
-			State = STATE5;
-			LedStepRight();
-			break;
+			   State = STATE5;
+			   LedStepRight();
+			   break;
 			case STATE5:
-			State = STATE0;
-			LedStepRight();
-			break;
+			   State = STATE0;
+			   LedStepRight();
+			   break;
     }
 		Delay(2000);*/
 		
 		
 		
 		//Cwiczenie 3
-		/*switch(eLedState){
-			case LED_LEFT:
+		/*switch(eDirection){
+			case LEFT_MOVE:
 				if(iStepCounter == 3){
 					eLedState = LED_RIGHT;
 					iStepCounter=0;
@@ -82,7 +85,7 @@ int main(){
 				}
 				
 			break;
-			case LED_RIGHT:
+			case RIGHT_MOVE:
 				if(iStepCounter == 3){
 					eLedState = LED_LEFT;
 					iStepCounter=0;
@@ -115,7 +118,7 @@ int main(){
 		}*/
 		
 		//Cwiczenie 5
-		/*switch(Motion){
+		/*switch(Action){
 			case MOVE:
 				if(eKeyboardRead()==BUTTON_0){
 					Motion = STOP;

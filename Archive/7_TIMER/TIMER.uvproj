@@ -398,31 +398,6 @@
               <FilePath>.\Startup.s</FilePath>
             </File>
             <File>
-              <FileName>keyboard.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Archive\6_AUTOMATY\keyboard.c</FilePath>
-            </File>
-            <File>
-              <FileName>led.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Archive\6_AUTOMATY\led.c</FilePath>
-            </File>
-            <File>
-              <FileName>main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Archive\6_AUTOMATY\main.c</FilePath>
-            </File>
-            <File>
-              <FileName>keyboard.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Archive\6_AUTOMATY\keyboard.h</FilePath>
-            </File>
-            <File>
-              <FileName>led.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Archive\6_AUTOMATY\led.h</FilePath>
-            </File>
-            <File>
               <FileName>timer.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\timer.h</FilePath>
@@ -431,6 +406,31 @@
               <FileName>timer.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\timer.c</FilePath>
+            </File>
+            <File>
+              <FileName>keyboard.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\keyboard.c</FilePath>
+            </File>
+            <File>
+              <FileName>led.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\led.c</FilePath>
+            </File>
+            <File>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\main.c</FilePath>
+            </File>
+            <File>
+              <FileName>keyboard.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\keyboard.h</FilePath>
+            </File>
+            <File>
+              <FileName>led.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\led.h</FilePath>
             </File>
           </Files>
         </Group>

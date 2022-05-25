@@ -4,22 +4,6 @@
 <h1>µVision Build Log</h1>
 <h2>Project:</h2>
 C:\Users\jakub\Desktop\PPSW2\ProgramObowi¹zkowy\Dekodowanie.uvproj
-Project File Date:  05/11/2022
+Project File Date:  05/12/2022
 
 <h2>Output:</h2>
-Rebuild target 'Target 1'
-assembling Startup.s...
-compiling conversion.c...
-conversion.h(5): warning:  #77-D: this declaration has no storage class or type specifier
-compiling decoding.c...
-conversion.h(5): warning:  #77-D: this declaration has no storage class or type specifier
-decoding.c(9): warning:  #375-D: declaration requires a typedef name
-decoding.c(11): warning:  #375-D: declaration requires a typedef name
-decoding.c(18): warning:  #375-D: declaration requires a typedef name
-decoding.c(24): warning:  #375-D: declaration requires a typedef name
-decoding.c(34): warning:  #375-D: declaration requires a typedef name
-decoding.c(120): warning:  #177-D: variable "asEmptyString" was declared but never referenced
-compiling string.c...
-linking...
-Program Size: Code=1824 RO-data=32 RW-data=40 ZI-data=1280  
-".\Dekodowanie.axf" - 0 Errors, 8 Warning(s).

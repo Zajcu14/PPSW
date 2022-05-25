@@ -1,0 +1,8 @@
+Dependencies for Project 'TESTY', Target 'Target 1': (DO NOT MODIFY !)
+F (.\Startup.s)(0x51C80D6E)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keilv5_1\ARM\RV31\INC-I C:\Keilv5_1\ARM\CMSIS\Include-I C:\Keilv5_1\ARM\Inc\Philips--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
+F (.\conversion.c)(0x627C0796)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keilv5_1\ARM\RV31\INC-I C:\Keilv5_1\ARM\CMSIS\Include-I C:\Keilv5_1\ARM\Inc\Philips-o .\conversion.o --omf_browse .\conversion.crf --depend .\conversion.d)
+F (.\decoding.c)(0x627C0796)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keilv5_1\ARM\RV31\INC-I C:\Keilv5_1\ARM\CMSIS\Include-I C:\Keilv5_1\ARM\Inc\Philips-o .\decoding.o --omf_browse .\decoding.crf --depend .\decoding.d)
+F (.\string.c)(0x627C0796)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keilv5_1\ARM\RV31\INC-I C:\Keilv5_1\ARM\CMSIS\Include-I C:\Keilv5_1\ARM\Inc\Philips-o .\string.o --omf_browse .\string.crf --depend .\string.d)
+F (.\conversion.h)(0x627C0796)()
+F (.\string.h)(0x627C0796)()
+F (.\main.c)(0x628C838A)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keilv5_1\ARM\RV31\INC-I C:\Keilv5_1\ARM\CMSIS\Include-I C:\Keilv5_1\ARM\Inc\Philips-o .\main.o --omf_browse .\main.crf --depend .\main.d)
