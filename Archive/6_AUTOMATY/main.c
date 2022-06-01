@@ -1,13 +1,11 @@
 #include "led.h"
 #include "keyboard.h"
 
-
 void Delay(int iMiliSeconds){
-	int i;
+	int iDelayCounter;
 
-	for(i=0;i<1063*iMiliSeconds;i++){}
+	for(iDelayCounter=0;iDelayCounter<5*1063*iMiliSeconds;iDelayCounter++){}
 }
-
 
 enum State{STATE0, STATE1, STATE2, STATE3, STATE4, STATE5};
 enum State eState = STATE0;
@@ -27,10 +25,14 @@ enum MovingDirectionState MotionDirection = STOP_MOVE;*/
 int iStepCounter=0;
 
 int main(){
-  
+	
+  LedInit();
+	KeyboardInit();
+	
 	while(1){
+		
 		//Cwiczenie 1
-		switch(eLedState){
+		/*switch(eLedState){
 			case LED_LEFT:
 			   eLedState = LED_RIGHT;
 		     LedStepLeft();
@@ -40,31 +42,32 @@ int main(){
 		     LedStepRight();
 			   break;
     }
+		Delay(1000);*/
 		
 		//Cwiczenie 2
-		/*switch(State){
+		/*switch(eState){
 			case STATE0:
-			   State = STATE1;
+			   eState = STATE1;
 			   LedStepLeft();
 			   break;
 			case STATE1:
-			   State = STATE2;
+			   eState = STATE2;
 			   LedStepLeft();
 			   break;
 			case STATE2:
-			   State = STATE3;
+			   eState = STATE3;
 			   LedStepLeft();
 			   break;
 			case STATE3:
-			   State = STATE4;
+			   eState = STATE4;
 			   LedStepRight();
 			   break;
 			case STATE4:
-			   State = STATE5;
+			   eState = STATE5;
 			   LedStepRight();
 			   break;
 			case STATE5:
-			   State = STATE0;
+			   eState = STATE0;
 			   LedStepRight();
 			   break;
     }
@@ -135,30 +138,35 @@ int main(){
 		}*/
 		
 		//Cwiczenie 6
-		/*switch(MotionDirection){
-			case STOP_MOVE:
-				if(eKeyboardRead()==BUTTON_0){
-					MotionDirection = LEFT_MOVE;
-				}else if(eKeyboardRead()==BUTTON_2){
-					MotionDirection = RIGHT_MOVE;
-				}
-			break;
-			case LEFT_MOVE:
-				if(eKeyboardRead()==BUTTON_1){
-				   MotionDirection = STOP_MOVE;
-				}else{
-					 MotionDirection = LEFT_MOVE;
-           LedStepLeft();					
-				}
-			break;
+		switch(eDirection){
+			 case STOP_MOVE:
+				  if(eKeyboardRead()==BUTTON_0){
+					   eDirection = LEFT_MOVE;
+				  }else if(eKeyboardRead()==BUTTON_2){
+					   eDirection = RIGHT_MOVE;
+				  }else{
+					   eDirection = STOP_MOVE;
+				  }
+			    break;
+			 case LEFT_MOVE:
+				  LedStepLeft();
+				  if(eKeyboardRead()==BUTTON_1){
+				     eDirection = STOP_MOVE;
+				  }else{
+					   eDirection = LEFT_MOVE;	
+				  }
+			    break;
 			case RIGHT_MOVE:
-				if(eKeyboardRead()==BUTTON_1){
-				   MotionDirection = RIGHT_MOVE;
-           LedStepRight();
-				}
-			break;
+				  LedStepRight();
+				  if(eKeyboardRead()==BUTTON_1){
+				     eDirection = STOP_MOVE;
+				  }else{
+					   eDirection = RIGHT_MOVE;	
+				  }
+			    break;
 				
-		}*/
+		}
+		Delay(100);
 		
 		
 		

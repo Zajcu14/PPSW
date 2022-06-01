@@ -1,33 +1,35 @@
 #include <LPC21xx.H>
 #include "timer.h"
 
-#define TIMER0_en 0x1
-#define TIMER0_rst 0x3
 
-#define MATCH0_rst 0x2
-#define MATCH0_ir 0x1
+// TIMER
+#define mCOUNTER_ENABLE 0x00000001
+#define mCOUNTER_RESET  0x00000002
 
-#define IR_FLAG0 0x1
+// CompareMatch
+#define mINTERRUPT_ON_MR0 0x00000001
+#define mRESET_ON_MR0     0x00000002
+#define mMR0_INTERRUPT    0x00000001
 
 void InitTimer0(void){
-	T0TCR=TIMER0_en;
+	T0TCR = mCOUNTER_ENABLE;
 }
 
 
 void WaitOnTimer0(unsigned int uiTime){
-	T0TCR=0x3;
-	T0TCR=0x1;
-	while( T0TC <= (15000 * uiTime)){};
+	T0TCR = mCOUNTER_ENABLE|mCOUNTER_RESET;
+	T0TCR = mCOUNTER_ENABLE;
+	while( T0TC <= (15 * uiTime)){};
 }
 
 void InitTimer0Match0(unsigned int iDelayTime){
   T0MR0 = 15*iDelayTime;
-	T0MCR = T0MCR | (MATCH0_ir | MATCH0_rst);
-	T0TCR=TIMER0_rst;
+	T0MCR = T0MCR | (mINTERRUPT_ON_MR0 | mRESET_ON_MR0);
+	T0TCR = T0TCR|mCOUNTER_RESET;
 	InitTimer0();
 }
 
 void WaitOnTimer0Match0(){
 	while( T0IR != 1 ){};
-	T0IR = (T0IR | IR_FLAG0);	
+	T0IR = (T0IR | mMR0_INTERRUPT);	
 }

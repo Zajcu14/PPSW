@@ -2,27 +2,27 @@
 #include "keyboard.h"
 #include "timer.h"
 
-void Delay(int iMiliSeconds){
-	int i;
 
-	for(i=0;i<1063*iMiliSeconds;i++){}
-}
 
-int iTimerCheck=0;
+int iTimeCheck=0;
 
 int main(){
-  
 	
-	InitTimer0();
-	WaitOnTimer0(400);
-	iTimerCheck++;
-	WaitOnTimer0(400);
-	iTimerCheck++;
+	/*WaitOnTimer0(400000);
+	iTimeCheck++;
+	WaitOnTimer0(400000);
+	iTimeCheck++;*/
 	
+	
+  LedInit();
 	
 	
 	while(1){
 		
+		LedStepLeft();
+		WaitOnTimer0(399000);
+		InitTimer0Match0(400000);
+		WaitOnTimer0Match0();
 	}
 	
 

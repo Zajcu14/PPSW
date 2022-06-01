@@ -67,13 +67,13 @@ int iPinCheck=0;
 
 enum KeyBoardsState eKeyboardRead(){
 	  iPinCheck=IO0PIN&BUT0_bm;
-	  if((IO0PIN&BUT0_bm)==BUT0_bm){
+	  if((IO0PIN&BUT0_bm)==0){
 		    return BUTTON_0;
-	  }else if((IO0PIN&BUT1_bm)==BUT1_bm){
+	  }else if((IO0PIN&BUT1_bm)==0){
 		    return BUTTON_1;
-	  }else if((IO0PIN&BUT2_bm)==BUT2_bm){
+	  }else if((IO0PIN&BUT2_bm)==0){
 	      return BUTTON_2;
-	  }else if((IO0PIN&BUT3_bm)==BUT2_bm){
+	  }else if((IO0PIN&BUT3_bm)==0){
 	      return BUTTON_3;
 	  }else{
 	      return RELASED;
@@ -157,7 +157,7 @@ int main(){
 		}
 		Delay(500);*/
 
-    /*Cwiczenie 19
+    //Cwiczenie 19
 		switch(eKeyboardRead()){
 			 case BUTTON_0:
                LedOn(0);
@@ -175,7 +175,7 @@ int main(){
                LedOn(4);
 			   break;
 		}
-		Delay(250);*/
+		Delay(250);
 
 
 		//Cwiczenie 22

@@ -60,7 +60,7 @@ void Automat(void){
 void ServoInit(unsigned int uiServoFrequency){
     LedInit();
 	  sServo.eState = CALLIB; 
-	  Timer1Interrupts_Init((1000000/uiServoFrequency),&Automat);
+	  //Timer1Interrupts_Init((1000000/uiServoFrequency),&Automat);
 }
 
 void ServoCallib(void){

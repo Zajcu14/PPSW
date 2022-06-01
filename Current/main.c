@@ -5,16 +5,16 @@
 
 
 int main (){
-	//unsigned int iMainLoopCtr;
+	unsigned int iMainLoopCtr;
 	//Timer
-	/*LedInit();
-	Timer1Interrupts_Init(20000,&Automat);*/
+	LedInit();
+	Timer1Interrupts_Init(2500000,&LedStepLeft);
   
 	ServoInit(1000);
 	
 	while(1){
 		
-	 	switch(eKeyboardRead()){
+	 	/*switch(eKeyboardRead()){
 		   case BUTTON_0:
           ServoCallib();
 			    break;
@@ -28,7 +28,7 @@ int main (){
           ServoGoTo(36);
 			    break;
 			
-		}
+		}*/
 		
 	}
 }
