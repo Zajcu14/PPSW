@@ -8,10 +8,10 @@ int iTimeCheck=0;
 
 int main(){
 	
-	/*WaitOnTimer0(400000);
+	WaitOnTimer0(1000000);
 	iTimeCheck++;
-	WaitOnTimer0(400000);
-	iTimeCheck++;*/
+	WaitOnTimer0(1000000);
+	iTimeCheck++;
 	
 	
   LedInit();
@@ -19,10 +19,10 @@ int main(){
 	
 	while(1){
 		
-		LedStepLeft();
+		/*LedStepLeft();
 		WaitOnTimer0(399000);
 		InitTimer0Match0(400000);
-		WaitOnTimer0Match0();
+		WaitOnTimer0Match0();*/
 	}
 	
 

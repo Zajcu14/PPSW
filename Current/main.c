@@ -1,20 +1,19 @@
 #include "led.h"
 #include "keyboard.h"
 #include "timer_interrupts.h"
-#include "servo.h"
+
 
 
 int main (){
 	unsigned int iMainLoopCtr;
-	//Timer
+	
 	LedInit();
 	Timer1Interrupts_Init(2500000,&LedStepLeft);
   
-	ServoInit(1000);
 	
 	while(1){
-		
-	 	/*switch(eKeyboardRead()){
+
+		/*switch(eKeyboardRead()){
 		   case BUTTON_0:
           ServoCallib();
 			    break;
@@ -29,6 +28,5 @@ int main (){
 			    break;
 			
 		}*/
-		
 	}
 }

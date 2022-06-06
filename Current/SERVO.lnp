@@ -3,10 +3,10 @@
 ".\keyboard.o"
 ".\led.o"
 ".\main.o"
+".\servo.o"
 ".\timer.o"
 ".\timer_interrupts.o"
-".\servo.o"
---strict --scatter ".\PRZERWANIA.sct"
+--strict --scatter ".\SERVO.sct"
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
---list ".\PRZERWANIA.map" -o .\PRZERWANIA.axf
+--list ".\SERVO.map" -o .\SERVO.axf
