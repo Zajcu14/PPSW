@@ -21,11 +21,11 @@ void (*ptrTimer0InterruptFunction)(void);
 
 /**********************************************/
 //(Interrupt Service Routine) of Timer 0 interrupt
-void Timer1IRQHandler(){
+__irq void Timer1IRQHandler(){
   
 	
 	T0IR=mMR0_INTERRUPT; 	// skasowanie flagi przerwania 
-	LedStepRight();		// cos do roboty
+	(*ptrTimer0InterruptFunction)();		// cos do roboty
 	VICVectAddr=0x00; 	// potwierdzenie wykonania procedury obslugi przerwania
 }
 /**********************************************/

@@ -12,7 +12,7 @@
 #define mMR0_INTERRUPT    0x00000001
 
 // VIC (Vector Interrupt Controller) VICIntEnable
-#define VIC_TIMER0_CHANNEL_NR 4
+#define VIC_TIMER1_CHANNEL_NR 4
 
 // VICVectCntlx Vector Control Registers
 #define mIRQ_SLOT_ENABLE 0x00000020
@@ -21,22 +21,19 @@ void (*ptrTimer0InterruptFunction)(void);
 
 /**********************************************/
 //(Interrupt Service Routine) of Timer 0 interrupt
-void Timer1IRQHandler(){
-  
-	
+__irq void Timer1IRQHandler(){
+
 	T0IR=mMR0_INTERRUPT; 	// skasowanie flagi przerwania 
 	LedStepRight();		// cos do roboty
 	VICVectAddr=0x00; 	// potwierdzenie wykonania procedury obslugi przerwania
 }
 /**********************************************/
 void Timer1Interrupts_Init(unsigned int uiPeriod,void (*ptrInterruptFunction)(void)){ // microseconds
-  
-	ptrTimer0InterruptFunction = ptrInterruptFunction;
-	
+  ptrTimer0InterruptFunction = ptrInterruptFunction;
         // interrupts
 
-	VICIntEnable |= (0x1 << VIC_TIMER0_CHANNEL_NR);            // Enable Timer 0 interrupt channel 
-	VICVectCntl1  = mIRQ_SLOT_ENABLE | VIC_TIMER0_CHANNEL_NR;  // Enable Slot 0 and assign it to Timer 0 interrupt channel
+	VICIntEnable |= (0x1 << VIC_TIMER1_CHANNEL_NR);            // Enable Timer 0 interrupt channel 
+	VICVectCntl1  = mIRQ_SLOT_ENABLE | VIC_TIMER1_CHANNEL_NR;  // Enable Slot 0 and assign it to Timer 0 interrupt channel
 	VICVectAddr1  =(unsigned long)Timer1IRQHandler; 	   // Set to Slot 0 Address of Interrupt Service Routine 
 
         // match module
@@ -49,4 +46,3 @@ void Timer1Interrupts_Init(unsigned int uiPeriod,void (*ptrInterruptFunction)(vo
 	T0TCR |=  mCOUNTER_ENABLE; // start 
 
 }
-/**********************************************/

@@ -18,25 +18,24 @@ led.c(59): warning:  #1-D: last line of file ends without a newline
 compiling main.c...
 led.h(5): warning:  #1-D: last line of file ends without a newline
 keyboard.h(4): warning:  #1-D: last line of file ends without a newline
-timer_interrupts.h(2): warning:  #1-D: last line of file ends without a newline
-main.c(17): warning:  #1-D: last line of file ends without a newline
+timer_interrupts.h(3): warning:  #1-D: last line of file ends without a newline
+main.c(31): warning:  #1-D: last line of file ends without a newline
 main.c(8): warning:  #177-D: variable "iMainLoopCtr" was declared but never referenced
 compiling servo.c...
 servo.h(13): warning:  #1-D: last line of file ends without a newline
 led.h(5): warning:  #1-D: last line of file ends without a newline
-timer_interrupts.h(2): warning:  #1-D: last line of file ends without a newline
+timer_interrupts.h(3): warning:  #1-D: last line of file ends without a newline
 servo.c(72): warning:  #1-D: last line of file ends without a newline
 compiling timer.c...
 timer.h(4): warning:  #1-D: last line of file ends without a newline
 timer.c(35): warning:  #1-D: last line of file ends without a newline
 compiling timer_interrupts.c...
 led.h(5): warning:  #1-D: last line of file ends without a newline
-timer_interrupts.h(2): warning:  #1-D: last line of file ends without a newline
-timer_interrupts.c(52): warning:  #1-D: last line of file ends without a newline
-linking...
-Program Size: Code=1224 RO-data=32 RW-data=8 ZI-data=1256  
-FromELF: creating hex file...
-".\SERVO.axf" - 0 Errors, 18 Warning(s).
+timer_interrupts.h(3): warning:  #1-D: last line of file ends without a newline
+timer_interrupts.c(24): error:  #147-D: declaration is incompatible with "void Timer1IRQHandler(void)" (declared at line 1 of "timer_interrupts.h")
+timer_interrupts.c(48): warning:  #1-D: last line of file ends without a newline
+".\SERVO.axf" - 1 Errors, 18 Warning(s).
+Target not created
 Rebuild target 'Target 1'
 assembling Startup.s...
 compiling keyboard.c...
@@ -48,21 +47,21 @@ led.c(59): warning:  #1-D: last line of file ends without a newline
 compiling main.c...
 led.h(5): warning:  #1-D: last line of file ends without a newline
 keyboard.h(4): warning:  #1-D: last line of file ends without a newline
-timer_interrupts.h(2): warning:  #1-D: last line of file ends without a newline
-main.c(32): warning:  #1-D: last line of file ends without a newline
+timer_interrupts.h(3): warning:  #1-D: last line of file ends without a newline
+main.c(31): warning:  #1-D: last line of file ends without a newline
 main.c(8): warning:  #177-D: variable "iMainLoopCtr" was declared but never referenced
 compiling servo.c...
 servo.h(13): warning:  #1-D: last line of file ends without a newline
 led.h(5): warning:  #1-D: last line of file ends without a newline
-timer_interrupts.h(2): warning:  #1-D: last line of file ends without a newline
+timer_interrupts.h(3): warning:  #1-D: last line of file ends without a newline
 servo.c(72): warning:  #1-D: last line of file ends without a newline
 compiling timer.c...
 timer.h(4): warning:  #1-D: last line of file ends without a newline
 timer.c(35): warning:  #1-D: last line of file ends without a newline
 compiling timer_interrupts.c...
 led.h(5): warning:  #1-D: last line of file ends without a newline
-timer_interrupts.h(2): warning:  #1-D: last line of file ends without a newline
-timer_interrupts.c(52): warning:  #1-D: last line of file ends without a newline
+timer_interrupts.h(3): warning:  #1-D: last line of file ends without a newline
+timer_interrupts.c(48): warning:  #1-D: last line of file ends without a newline
 linking...
 Program Size: Code=1224 RO-data=32 RW-data=8 ZI-data=1256  
 FromELF: creating hex file...

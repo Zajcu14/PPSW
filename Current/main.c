@@ -8,11 +8,10 @@ int main (){
 	unsigned int iMainLoopCtr;
 	
 	LedInit();
-	Timer1Interrupts_Init(2500000,&LedStepLeft);
+	Timer1Interrupts_Init(4000000,&LedStepLeft);
   
-	
 	while(1){
-
+		
 		/*switch(eKeyboardRead()){
 		   case BUTTON_0:
           ServoCallib();

@@ -10,11 +10,11 @@ struct Servo sServo;
 
 void DetectorInit(){
 	
-   IO1DIR=IO1DIR|(DET_bm);	
+   IO0DIR=IO0DIR&(~DET_bm);	
 }
 
 enum DetectorState eReadDetector(){
-	if((IO1PIN^(DET_bm)) == 1){
+	if((IO0PIN&(DET_bm)) == 0){
 		return ACTIVE;
 	}
 	return INACTIVE;

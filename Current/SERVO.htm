@@ -3,9 +3,9 @@
 <title>Static Call Graph - [.\SERVO.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\SERVO.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5.03 [Build 76]: Last Updated: Mon Jun 06 08:58:03 2022
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5.03 [Build 76]: Last Updated: Mon Jun 06 20:31:39 2022
 <BR><P>
-<H3>Maximum Stack Usage =         16 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
+<H3>Maximum Stack Usage =         32 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
 Timer1IRQHandler &rArr; LedStepRight &rArr; LedStep
 <P>
@@ -220,8 +220,8 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> rtentry2.o(.ARM.Collect$$rtentry$$0000000D)
 </UL>
-<P><STRONG><a name="[20]"></a>Timer1IRQHandler</STRONG> (ARM, 36 bytes, Stack size 8 bytes, timer_interrupts.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = Timer1IRQHandler &rArr; LedStepRight &rArr; LedStep
+<P><STRONG><a name="[20]"></a>Timer1IRQHandler</STRONG> (ARM, 36 bytes, Stack size 24 bytes, timer_interrupts.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = Timer1IRQHandler &rArr; LedStepRight &rArr; LedStep
 </UL>
 <BR>[Calls]<UL><LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedStepRight
 </UL>
