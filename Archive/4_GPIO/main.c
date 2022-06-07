@@ -10,7 +10,6 @@
 #define BUT1_bm  0x40
 #define BUT3_bm  0x80
 
-
 enum StepDirection {LEFT, RIGHT};
 enum KeyBoardsState {RELASED, BUTTON_0, BUTTON_1, BUTTON_2, BUTTON_3};
 
