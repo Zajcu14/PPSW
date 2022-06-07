@@ -1,7 +1,6 @@
 #include <LPC21xx.H>
 #include "timer.h"
 
-
 // TIMER
 #define mCOUNTER_ENABLE 0x00000001
 #define mCOUNTER_RESET  0x00000002

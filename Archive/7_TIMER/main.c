@@ -2,28 +2,13 @@
 #include "keyboard.h"
 #include "timer.h"
 
-
-
-int iTimeCheck=0;
-
 int main(){
-	
-	WaitOnTimer0(1000000);
-	iTimeCheck++;
-	WaitOnTimer0(1000000);
-	iTimeCheck++;
-	
-	
   LedInit();
-	
+	InitTimer0Match0(250000);
 	
 	while(1){
+		LedStepLeft();
+		WaitOnTimer0Match0();
 		
-		/*LedStepLeft();
-		WaitOnTimer0(399000);
-		InitTimer0Match0(400000);
-		WaitOnTimer0Match0();*/
 	}
-	
-
 }
