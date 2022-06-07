@@ -21,7 +21,7 @@ void (*ptrTimer0InterruptFunction)(void);
 
 /**********************************************/
 //(Interrupt Service Routine) of Timer 0 interrupt
-__irq void Timer1IRQHandler(){
+__irq void Timer0IRQHandler(){
   
 	
 	T0IR=mMR0_INTERRUPT; 	// skasowanie flagi przerwania 
@@ -29,7 +29,7 @@ __irq void Timer1IRQHandler(){
 	VICVectAddr=0x00; 	// potwierdzenie wykonania procedury obslugi przerwania
 }
 /**********************************************/
-void Timer1Interrupts_Init(unsigned int uiPeriod,void (*ptrInterruptFunction)(void)){ // microseconds
+void Timer0Interrupts_Init(unsigned int uiPeriod,void (*ptrInterruptFunction)(void)){ // microseconds
   
 	ptrTimer0InterruptFunction = ptrInterruptFunction;
 	
@@ -37,7 +37,7 @@ void Timer1Interrupts_Init(unsigned int uiPeriod,void (*ptrInterruptFunction)(vo
 
 	VICIntEnable |= (0x1 << VIC_TIMER0_CHANNEL_NR);            // Enable Timer 0 interrupt channel 
 	VICVectCntl1  = mIRQ_SLOT_ENABLE | VIC_TIMER0_CHANNEL_NR;  // Enable Slot 0 and assign it to Timer 0 interrupt channel
-	VICVectAddr1  =(unsigned long)Timer1IRQHandler; 	   // Set to Slot 0 Address of Interrupt Service Routine 
+	VICVectAddr1  =(unsigned long)Timer0IRQHandler; 	   // Set to Slot 0 Address of Interrupt Service Routine 
 
         // match module
 
