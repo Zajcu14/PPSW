@@ -30,5 +30,6 @@ void InitTimer0Match0(unsigned int iDelayTime){
 
 void WaitOnTimer0Match0(){
 	while( T0IR != 1 ){};
-	T0IR = (T0IR | mMR0_INTERRUPT);	
+	T0IR = mMR0_INTERRUPT;	
+		//git test
 }
