@@ -12,6 +12,7 @@ enum MoveDirection eDirection = LEFT_MOVE;
 
 int main(){
 	char cBlinkCounter=0;
+	char cBlinkDelay=0;
 	
   LedInit();
 	KeyboardInit();
@@ -50,10 +51,14 @@ int main(){
 				  }
 			    break;
 			case BLINK:
-				  if(cBlinkCounter<5){
-				     LedInit();
-						 Delay(500);
-						 LedOn(4);
+				  if(cBlinkCounter<10){
+						 if(cBlinkDelay==0){ 
+							 LedInit();
+							 cBlinkDelay = 1;
+						 }else{
+							 LedOn(4);
+							 cBlinkDelay = 0;
+						 }
 						 eDirection = BLINK;
 						 cBlinkCounter++;
 				  }else{
